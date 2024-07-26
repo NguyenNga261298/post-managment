@@ -13,29 +13,29 @@
     border-radius: 8px;
     padding: 16px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    transition: box-shadow 0.3s; /* Hiệu ứng chuyển tiếp cho bóng */
+    transition: box-shadow 0.3s; 
   }
   
   .post-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tăng hiệu ứng bóng khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
   
-  /* Media Queries cho kích thước màn hình nhỏ hơn */
+  
   @media (max-width: 1024px) {
     .post-list {
-      grid-template-columns: repeat(3, 1fr); /* 3 cột cho màn hình nhỏ hơn */
+      grid-template-columns: repeat(3, 1fr); 
     }
   }
   
   @media (max-width: 768px) {
     .post-list {
-      grid-template-columns: repeat(2, 1fr); /* 2 cột cho màn hình rất nhỏ */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
   @media (max-width: 480px) {
     .post-list {
-      grid-template-columns: 1fr; /* 1 cột cho màn hình cực nhỏ */
+      grid-template-columns: 1fr; 
     }
   }
   
