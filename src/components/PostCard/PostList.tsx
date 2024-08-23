@@ -72,6 +72,7 @@ const PostList: React.FC = () => {
         type="primary"
         icon={<PlusOutlined />}
         onClick={showModal}
+        data-testid="btn-create-new-post"
       >
         Add New Post
       </Button>
@@ -83,6 +84,7 @@ const PostList: React.FC = () => {
         onCancel={closeModal}
         destroyOnClose
         width={800}
+        data-testid="modal"
       >
         <PostForm
           postToEditId={postToEditId}

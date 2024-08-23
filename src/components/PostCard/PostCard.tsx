@@ -33,7 +33,7 @@ const PostCard: React.FC<PostCardProps> = (props) => {
       data-testid="card-post" 
       title={`[${post.id}] ${post.title}`}
       actions={[
-        <EditOutlined key="edit" onClick={() => handleEditPost(post.id)} />,
+        <EditOutlined data-testid="edit-btn" key="edit" onClick={() => handleEditPost(post.id)} />,
         <Popconfirm
           key="delete"
           title="Delete Post"
